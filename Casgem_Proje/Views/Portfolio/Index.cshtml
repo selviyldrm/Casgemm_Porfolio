@@ -1,0 +1,45 @@
+﻿@{ Layout = null; }
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@Html.Partial("PartialHead")
+
+<body>
+    <!-- header -->
+    @Html.Partial("PartialNavbar")
+    <!-- //header -->
+    <!-- banner section -->
+    @Html.Action("PartialFeature")
+    <!-- //banner section -->
+    <!-- home page about section -->
+    @Html.Action("PartialWhoAmI")
+    <!-- //home page about section -->
+    <!-- home page second section -->
+    @Html.Action("MyResume")
+    <!-- //home page second section -->
+    <!-- home page services section -->
+    @Html.Action("PartialService")
+    <!-- //home page services section -->
+    <!-- stats -->
+    @Html.Action("PartialStatistic")
+    <!-- //stats -->
+    <!-- testimonials -->
+    @Html.Action("PartialTestimonial")
+    <!-- //testimonials -->
+    <!-- home page video popup section -->
+    @Html.Action("PartialVideo")
+    <!-- //home page video popup section -->
+    <!-- freelance hire me -->
+    @Html.Action("PartialFreelance")
+    <!-- //freelance hire me -->
+    <!-- Footer -->
+  @Html.Action("PartialFooter")
+    <!-- //Footer -->
+    <!-- all js scripts and files here -->
+
+ @Html.Partial("PartialScript")

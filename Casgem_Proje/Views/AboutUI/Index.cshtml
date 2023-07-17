@@ -1,0 +1,41 @@
+﻿
+@{
+
+    Layout = null;
+}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+@Html.Action("PartialHead","Portfolio")
+
+<body>
+    <!-- header -->
+    @Html.Action("PartialNavbar","Portfolio")
+    <!-- //header -->
+    <!-- about breadcrumb -->
+    @Html.Action("PartialBreadcrumb")
+    <!-- //about breadcrumb -->
+    <!-- about page about section -->
+    @Html.Action("PartialAbout")
+    <!-- //about page about section -->
+    <!-- about page second section -->
+    @Html.Action("PartialAbout2")
+    <!-- //about page about section -->
+    <!-- about page third section -->
+    @Html.Action("PartialAbout3")
+    <!-- about page third section -->
+    <!-- subscribe block -->
+    @Html.Action("PartialNewsletter")
+    <!-- //subscribe block -->
+    <!-- achievements block -->
+    @Html.Action("PartialAchievements")
+    <!-- //achievements block -->
+    <!-- Footer -->
+    @Html.Action("PartialFooter","Portfolio")
+    <!-- //Footer -->
+    <!-- all js scripts and files here -->
+    @Html.Action("PartialScript","Portfolio")

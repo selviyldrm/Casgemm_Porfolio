@@ -1,0 +1,25 @@
+﻿@model Casgem_Proje.Models.Entities.TblReference
+@{
+    ViewBag.Title = "UpdateReference";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+
+<h2>Referans Güncelleme Sayfası</h2>
+
+
+<form method="post">
+    @Html.HiddenFor(x => x.ReferenceID)
+    <label>Ad Soyad</label>
+    @Html.TextBoxFor(x => x.ReferenceNameSurname, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.ReferenceDescription, new { @class = "form-control" })
+    <br />
+    <label>Resim</label>
+    @Html.TextBoxFor(x => x.ReferenceImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Şehir</label>
+    @Html.TextBoxFor(x => x.ReferenceCity, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Referans Güncelle</button>
+</form>

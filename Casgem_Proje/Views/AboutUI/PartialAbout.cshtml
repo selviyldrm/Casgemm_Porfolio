@@ -1,0 +1,48 @@
+﻿@model List<Casgem_Proje.Models.Entities.TblSocialMedia>
+<section class="w3l-aboutblock1" id="about">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="position-relative">
+                        <img src="@ViewBag.ImageUrl"  alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-lg-0 mt-5">
+                    <h5 class="title-small mb-2">Merhaba Ben Junior Developer</h5>
+                    <p class="mt-4">
+                        @ViewBag.Description
+                    </p>
+                    <div class="my-info mt-4">
+                        <div class="single-info">
+                            <span>Ad Soyadı:</span>
+                            <p>@ViewBag.Name  @ViewBag.Surname</p>
+                        </div>
+                        <div class="single-info">
+                            <span>Telefon Numarası:</span>
+                            <p>@ViewBag.PhoneNumber</p>
+                        </div>
+                        <div class="single-info">
+                            <span>Adres:</span>
+                            <p>@ViewBag.Address</p>
+                        </div>
+                        <div class="single-info">
+                            <span>Mail:</span>
+                            <p><a href="@ViewBag.Mail">@ViewBag.Mail</a></p>
+                        </div>
+                    </div>
+                    <div class="my-social mt-lg-5 mt-4">
+                        <a href="/Portfolio/Download/" class="btn btn-style btn-primary">Cv'mi İndir</a>
+                        <ul class="social m-0 p-0">
+                         
+                            @foreach (var item in Model)
+                            {
+                            <li><a href="@item.SocialMediaUrl"><span class=" @item.SocialMediaIcon"></span></a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
